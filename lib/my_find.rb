@@ -4,9 +4,9 @@ def my_find(collection)
  if block_given?
    i=0;
    while i<collection.length;
-   if yield(collection[i]) == true;
-     return collection[i]
-    end
+     yield(collection[i]);
+     
+  
    i+=1
     end
   else "No block given"
